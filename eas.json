@@ -4,6 +4,7 @@
   },
   "build": {
     "production": {
+      "node": "20.19.4",
       "distribution": "store",
       "android": {
         "buildType": "apk"
@@ -14,6 +15,7 @@
       }
     },
     "development": {
+      "node": "20.19.4",
       "distribution": "internal",
       "android": {
         "buildType": "apk"
