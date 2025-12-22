@@ -1,0 +1,22 @@
+{
+  "expo": {
+    "name": "SadiCoin Tech",
+    "slug": "sadicoin-tech",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#000000"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "android": {
+      "package": "tech.sadicoin.app",
+      "versionCode": 1
+    },
+    "extra": {
+      "SDC_CONTRACT": "0x3e6dB8977261B30Ea3Cc0408867912E8B6CeDC96",
+      "DEXSCREENER_PAIR": "0xb298eff7ddc6385cdb5494a7315fd11a5fe461c1"
+    }
+  }
+}
