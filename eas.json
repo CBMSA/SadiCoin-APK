@@ -1,12 +1,25 @@
 {
+  "cli": {
+    "version": ">= 3.0.0"
+  },
   "build": {
     "production": {
+      "distribution": "store",
       "android": {
-        "workflow": "managed",
         "buildType": "apk"
       },
       "ios": {
-        "workflow": "managed"
+        "simulator": false,
+        "enterpriseProvisioning": "adhoc"
+      }
+    },
+    "development": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      },
+      "ios": {
+        "simulator": true
       }
     }
   }
