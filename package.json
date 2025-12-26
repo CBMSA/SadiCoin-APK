@@ -1,15 +1,69 @@
 {
   "name": "sadicoin-tech",
   "version": "1.0.0",
-  "main": "node_modules/expo/AppEntry.js",
+  "main": "index.js",
+  "private": true,
   "scripts": {
     "start": "expo start",
-    "android": "expo start --android"
+    "android": "expo run:android",
+    "web": "expo start --web",
+    "build:android": "eas build -p android --profile production",
+    "build:preview": "eas build -p android --profile preview"
   },
   "dependencies": {
     "expo": "~54.0.0",
     "react": "18.2.0",
-    "react-native": "0.73.6"
+    "react-native": "0.73.6",
+
+    "@expo/vector-icons": "^14.0.0",
+    "ethers": "^6.10.0",
+
+    "@walletconnect/react-native-dapp": "^1.7.0",
+    "react-native-gesture-handler": "~2.14.0",
+    "react-native-safe-area-context": "4.8.2",
+    "react-native-webview": "13.6.3"
   },
-  "private": true
+  "devDependencies": {
+    "@babel/core": "^7.23.0"
+  }
+}
+✅ REQUIRED FILE CHECK (IMPORTANT)
+Make sure you also have:
+
+index.js
+js
+Copy code
+import { registerRootComponent } from "expo";
+import App from "./App";
+
+registerRootComponent(App);
+✅ app.json (ADD THIS PART ONLY IF MISSING)
+Make sure your app config includes EAS project ID after eas init:
+
+json
+Copy code
+{
+  "expo": {
+    "name": "SadiCoin Tech",
+    "slug": "sadicoin-tech",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#000000"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "android": {
+      "package": "tech.sadicoin.app",
+      "versionCode": 1
+    },
+    "extra": {
+      "SDC_CONTRACT": "0x3e6dB8977261B30Ea3Cc0408867912E8B6CeDC96",
+      "DEXSCREENER_PAIR": "0xb298eff7ddc6385cdb5494a7315fd11a5fe461c1",
+      "eas": {
+        "projectId": "PASTE-YOUR-PROJECT-ID-HERE"
+      }
+    }
+  }
 }
