@@ -56,7 +56,7 @@ import App from "./App";
       "SDC_CONTRACT": "0x3e6dB8977261B30Ea3Cc0408867912E8B6CeDC96",
       "DEXSCREENER_PAIR": "0xb298eff7ddc6385cdb5494a7315fd11a5fe461c1",
       "eas": {
-        "projectId": "PASTE-YOUR-PROJECT-ID-HERE"
+        "projectId": "5a701d9c-bac9-4062-8e6c-bf109c4c9131"
       }
     }
   }
