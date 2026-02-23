@@ -27,21 +27,15 @@
     "@babel/core": "^7.23.0"
   }
 }
-✅ REQUIRED FILE CHECK (IMPORTANT)
-Make sure you also have:
+
 
 index.js
-js
-Copy code
+
+
 import { registerRootComponent } from "expo";
 import App from "./App";
 
-registerRootComponent(App);
-✅ app.json (ADD THIS PART ONLY IF MISSING)
-Make sure your app config includes EAS project ID after eas init:
 
-json
-Copy code
 {
   "expo": {
     "name": "SadiCoin Tech",
