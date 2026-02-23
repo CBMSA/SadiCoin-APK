@@ -1,19 +1,20 @@
 {
-  "cli": {
-    "version": ">= 8.0.0"
-  },
-  "build": {
-    "production": {
-      "android": {
-        "buildType": "apk"
-      },
-      "distribution": "internal"
+  "builds": {
+    "android": {
+      "release": {
+        "workflow": "managed",
+        "buildType": "app-bundle",
+        "releaseChannel": "production"
+      }
     },
-    "preview": {
-      "android": {
-        "buildType": "apk"
-      },
-      "distribution": "internal"
+    "ios": {
+      "release": {
+        "workflow": "managed",
+        "buildType": "app-store"
+      }
     }
+  },
+  "cli": {
+    "version": ">=0.45.0"
   }
 }
