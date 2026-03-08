@@ -1,13 +1,7 @@
 {
   "build": {
     "android": {
-      "release": {
-        "buildType": "app-bundle",
-        "releaseChannel": "production"
-      }
+      "buildType": "app-bundle"
     }
-  },
-  "cli": {
-    "version": ">=0.45.0"
   }
 }
