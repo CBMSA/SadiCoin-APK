@@ -1,16 +1,10 @@
 {
-  "builds": {
+  "build": {
     "android": {
       "release": {
         "workflow": "managed",
         "buildType": "app-bundle",
         "releaseChannel": "production"
-      }
-    },
-    "ios": {
-      "release": {
-        "workflow": "managed",
-        "buildType": "app-store"
       }
     }
   },
