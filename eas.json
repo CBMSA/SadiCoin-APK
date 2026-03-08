@@ -2,7 +2,6 @@
   "build": {
     "android": {
       "release": {
-        "workflow": "managed",
         "buildType": "app-bundle",
         "releaseChannel": "production"
       }
